@@ -1,0 +1,522 @@
+/* ======== Base (基礎) ======== */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: solid 1px; */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+body,
+html {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  background-color: #fbfbfb;
+}
+/* ======= Typography（排版）======= */
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+span {
+  font-size: 24px;
+  vertical-align: middle;
+}
+/* ======= Utility（工具類）======= */
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.ml-80 {
+  margin-left: 80px;
+}
+
+.blue {
+  color: #0027d5;
+}
+.multiline-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/* ======= Layout (布局) ======= */
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 10px;
+}
+.header {
+  max-width: 100%;
+}
+.welcomImg {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: calc(90vh - 90px);
+  min-height: 300px;
+}
+.footer {
+  padding: 24px 0;
+  text-align: center;
+  background-color: #fff;
+}
+.main {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.contact {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #6c757d;
+  padding: 80px;
+}
+
+/* ======= Module (模組) ======= */
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 28px;
+  padding: 24px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.welcomImg .img {
+  width: 50%;
+}
+.welcomImg .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.welcomImg .introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  min-height: 100%;
+}
+.introduce {
+  background-image: url("/blog/images/Hero\ Section2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.introduce .bigTitle p {
+  font-size: 120px;
+  color: blue;
+  font-weight: 900;
+}
+.introduce h2 {
+  font-weight: 700;
+}
+.newPost {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #6c757d;
+  border-top: 2px solid #6c757d;
+  min-height: 270px;
+}
+.newPost img {
+  width: 50%;
+}
+.newPost .newPostTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+.newPostTitle span {
+  color: blue;
+}
+.newPost .newPostTitle .newTag {
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 6px 12px;
+  margin-left: 8px;
+  color: #ffffff;
+  background-color: blue;
+  vertical-align: middle;
+}
+.newPost .newPostTitle h2 {
+  font-weight: 700;
+}
+.search {
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 30%;
+}
+.bi {
+  position: absolute;
+  top: 10%;
+  left: 15px;
+  color: #666;
+  font-size: 24px;
+}
+.search input {
+  width: 100%;
+  padding: 15px 10px 15px 50px;
+  border: 1px solid #4b4b4b;
+  border-radius: 40px;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card {
+  width: 30%;
+  margin-bottom: 40px;
+}
+.card img {
+  width: 100%;
+  vertical-align: middle;
+}
+.card .date {
+  font-size: 16px;
+  display: block;
+}
+.card .tag {
+  font-size: 24px;
+  font-weight: 500;
+  color: blue;
+  padding: 5px;
+}
+.card h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.card .content {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.read {
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #fff;
+}
+
+.hotTag {
+  border-radius: 20px 20px 20px 20px;
+  padding: 6px 10px;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: blue;
+  vertical-align: text-top;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff;
+  padding: 6px 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  max-width: 328px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+.pagination .page,
+.pagination .arrow,
+.pagination .dots {
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.pagination .active a {
+  color: blue;
+}
+
+.pagination .dots {
+  cursor: default;
+}
+
+.contact p {
+  font-size: 32px;
+}
+.contact ul {
+  display: flex;
+}
+/* ======= state (狀態) ======= */
+.header ul li:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+.newPost .newPostTitle .newTag:hover {
+  background-color: yellow;
+  color: blue;
+  cursor: pointer;
+}
+.search input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+.read:hover {
+  background-color: rgb(19, 22, 66);
+  color: white;
+}
+.hotTag:hover {
+  background-color: yellow;
+  color: blue;
+  cursor: pointer;
+}
+.pagination .page,
+.pagination .arrow,
+.dots {
+  &:hover {
+    background-color: #d6e6ff;
+    color: #0027d5;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+/* ======= Responsive（響應式）======= */
+@media (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+  .card {
+    width: 48%;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact p {
+    text-align: center;
+  }
+  .contact ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+  .welcomImg {
+    flex-direction: column;
+  }
+  .welcomImg .img {
+    width: 100%;
+  }
+  .welcomImg .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .welcomImg .introduce {
+    width: 100%;
+    height: 180px;
+  }
+  .welcomImg .introduce .ml-80 {
+    margin-left: 24px;
+  }
+  .introduce .bigTitle p {
+    font-size: 52px;
+  }
+
+  .newPost {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .newPost img {
+    width: 100%;
+  }
+  .newPost .newPostTitle {
+    max-width: 100%;
+    margin-bottom: 48px;
+  }
+  .search {
+    max-width: 100%;
+  }
+  .cardList {
+    gap: 32px;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  img {
+    width: auto;
+  }
+  .contact {
+    display: none;
+  }
+  .footer {
+    border-top: 2px solid #6c757d;
+  }
+}
