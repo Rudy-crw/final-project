@@ -461,7 +461,7 @@ span {
     justify-content: center;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 837px) {
   .container {
     padding: 0;
   }
