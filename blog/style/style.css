@@ -407,6 +407,16 @@ span {
 .contact ul {
   display: flex;
 }
+.contact ul li a {
+  transition: transform 0.1s ease-in;
+  display: inline-block;
+  border-radius: 20px;
+}
+.contact ul li a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* ======= state (狀態) ======= */
 .header ul li:hover {
   transition: transform 0.3s ease;

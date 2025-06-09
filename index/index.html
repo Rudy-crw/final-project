@@ -35,6 +35,7 @@
 
       gtag("config", "G-NGMWVHEZ23");
     </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -59,7 +60,7 @@
           <h3 class="ml-80">前端工程師 & 職涯諮詢師</h3>
         </div>
       </div>
-      <div class="intro">
+      <div data-aos="zoom-in" class="intro">
         <h3 class="mb-16 changeTitle">
           嗨，我是 Alyse <br />一名深耕前端技術的工程師。
         </h3>
@@ -68,51 +69,59 @@
           等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
         </h3>
         <div class="linkLogo">
-          <img
-            data-filename="onlyIcon.png"
-            class="ytLogo"
-            src="./images/onlyIcon.png"
-            alt=""
-          />
-          <img
-            data-filename="onlyIcon-1.png"
-            class="podcastLogo"
-            src="./images/onlyIcon-1.png"
-            alt=""
-          />
-          <img
-            data-filename="onlyIcon-2.png"
-            class="fbLogo"
-            src="./images/onlyIcon-2.png"
-            alt=""
-          />
-          <img
-            data-filename="onlyIcon-3.png"
-            class="linkedinLogo"
-            src="./images/onlyIcon-3.png"
-            alt=""
-          />
-          <img
-            data-filename="icons8-linkedin.png"
-            class="igLogo"
-            src="./images/icons8-linkedin.png"
-            alt=""
-          />
+          <a href="#"
+            ><img
+              data-filename="onlyIcon.png"
+              class="ytLogo"
+              src="./images/onlyIcon.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              data-filename="onlyIcon-1.png"
+              class="podcastLogo"
+              src="./images/onlyIcon-1.png"
+              alt=""
+          /></a>
+
+          <a href="#"
+            ><img
+              data-filename="onlyIcon-2.png"
+              class="fbLogo"
+              src="./images/onlyIcon-2.png"
+              alt=""
+          /></a>
+
+          <a href="#">
+            <img
+              data-filename="onlyIcon-3.png"
+              class="linkedinLogo"
+              src="./images/onlyIcon-3.png"
+              alt=""
+          /></a>
+
+          <a href="#">
+            <img
+              data-filename="icons8-linkedin.png"
+              class="igLogo"
+              src="./images/icons8-linkedin.png"
+              alt=""
+          /></a>
         </div>
       </div>
       <div class="main">
         <div class="services mb-80 pt-80">
-          <h2 class="mb-32">專業服務與方案</h2>
+          <h2 data-aos="fade-up" class="mb-32">專業服務與方案</h2>
           <ul class="services-ul mb-32">
             <li class="services-li mb-64">
-              <div class="serverImg">
+              <div data-aos="zoom-in-right" class="serverImg">
                 <img
                   data-filename="photo.png"
                   src="./images/photo.png"
                   alt=""
                 />
               </div>
-              <div class="serverText ml-m40">
+              <div data-aos="zoom-in-left" class="serverText ml-m40">
                 <h3 class="serverTextTitle mb-8">履歷健檢</h3>
                 <p>
                   履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。
@@ -120,14 +129,14 @@
               </div>
             </li>
             <li class="services-li mb-64 flex-dir-rev">
-              <div class="serverImg ml-m40">
+              <div data-aos="zoom-in-left" class="serverImg ml-m40">
                 <img
                   data-filename="photo2.png"
                   src="./images/photo2.png"
                   alt=""
                 />
               </div>
-              <div class="serverText">
+              <div data-aos="zoom-in-right" class="serverText">
                 <h3 class="serverTextTitle mb-8">線上諮詢</h3>
                 <p>
                   想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。
@@ -135,14 +144,14 @@
               </div>
             </li>
             <li class="services-li mb-64">
-              <div class="serverImg">
+              <div data-aos="zoom-in-right" class="serverImg">
                 <img
                   data-filename="photo3.png"
                   src="./images/photo3.png"
                   alt=""
                 />
               </div>
-              <div class="serverText ml-m40">
+              <div data-aos="zoom-in-left" class="serverText ml-m40">
                 <h3 class="serverTextTitle mb-8">網頁開發</h3>
                 <p>
                   想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。
@@ -150,14 +159,14 @@
               </div>
             </li>
             <li class="services-li mb-64 flex-dir-rev">
-              <div class="serverImg ml-m40">
+              <div data-aos="zoom-in-left" class="serverImg ml-m40">
                 <img
                   data-filename="photo4.png"
                   src="./images/photo4.png"
                   alt=""
                 />
               </div>
-              <div class="serverText">
+              <div data-aos="zoom-in-right" class="serverText">
                 <h3 class="serverTextTitle mb-8">企業內訓</h3>
                 <p>
                   想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。
@@ -166,7 +175,11 @@
             </li>
           </ul>
 
-          <section class="contactAnchor mb-80">
+          <section
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="contactAnchor mb-80"
+          >
             <h3>聯繫我，取得更多資訊！</h3>
             <a href="#contact"
               ><img class="arrow-right" src="./images/arrow-right.png"
@@ -174,8 +187,8 @@
           </section>
         </div>
         <div class="blogList pb-80 pt-80">
-          <h2 class="ml-68 mb-24">部落格精選</h2>
-          <div class="swiper-wrapper-area">
+          <h2 data-aos="fade-up" class="ml-68 mb-24">部落格精選</h2>
+          <div data-aos="fade-left" class="swiper-wrapper-area">
             <div class="swiper">
               <ul class="swiper-wrapper cardList">
                 <li class="swiper-slide card">
@@ -426,9 +439,9 @@
           </div>
         </div>
         <div class="case-sucess pt-80">
-          <h2 class="mb-24">職涯諮詢<wbr />成功案例</h2>
+          <h2 data-aos="fade-up" class="mb-24">職涯諮詢<wbr />成功案例</h2>
           <div class="sucess-up mb-40">
-            <div class="caseImg">
+            <div data-aos="fade-up" class="caseImg">
               <img
                 data-filename="photo8.png"
                 src="./images/photo8.png"
@@ -436,7 +449,7 @@
               />
             </div>
             <div class="caseText">
-              <div class="caseCardText">
+              <div data-aos="fade-left" class="caseCardText">
                 <p>
                   在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
                     style="color: #0027d5"
@@ -444,7 +457,7 @@
                   >。
                 </p>
               </div>
-              <div class="caseCardBtn">
+              <div data-aos="fade-left" class="caseCardBtn">
                 <p>期待在下一個新機會中，我能與你一起攜手邁向更高峰！</p>
                 <a href="#" class="btn"> 立即預約諮詢 </a>
               </div>
@@ -454,43 +467,52 @@
             <ul class="podcastList">
               <li>
                 <img
+                  data-aos="flip-left"
                   data-filename="people.png"
                   class="mb-16"
                   src="./images/people.png"
                   alt=""
                 />
-                <h4 class="mb-8">無經驗到前端工程師 Offer</h4>
-                <ul class="podcast-ul mb-16">
+                <h4 data-aos="fade-up" class="mb-8">
+                  無經驗到前端工程師 Offer
+                </h4>
+                <ul data-aos="fade-up" class="podcast-ul mb-16">
                   <li class="podcast-li mb-8">打造前端專案與履歷亮點</li>
                   <li class="podcast-li podcast-line">深度強化面試表現</li>
                 </ul>
-                <a class="podcastLink" href="#">前往聆聽 podcast</a>
+                <a data-aos="fade-up" class="podcastLink" href="#"
+                  >前往聆聽 podcast</a
+                >
               </li>
               <li>
                 <img
+                  data-aos="flip-left"
                   data-filename="people2.png"
                   class="mb-16"
                   src="./images/people2.png"
                   alt=""
                 />
-                <h4 class="mb-8">轉職迷茫到明確學習規劃</h4>
-                <ul class="podcast-ul mb-16">
+                <h4 data-aos="fade-up" class="mb-8">轉職迷茫到明確學習規劃</h4>
+                <ul data-aos="fade-up" class="podcast-ul mb-16">
                   <li class="podcast-li mb-8">制訂階段性目標與時間安排</li>
                   <li class="podcast-li podcast-line">
                     鼓勵參與前端社群或活動
                   </li>
                 </ul>
-                <a class="podcastLink" href="">前往聆聽 podcast</a>
+                <a data-aos="fade-up" class="podcastLink" href=""
+                  >前往聆聽 podcast</a
+                >
               </li>
               <li>
                 <img
+                  data-aos="flip-left"
                   data-filename="people3.png"
                   class="mb-16"
                   src="./images/people3.png"
                   alt=""
                 />
-                <h4 class="mb-8">面試緊張到從容應對</h4>
-                <ul class="podcast-ul mb-16">
+                <h4 data-aos="fade-up" class="mb-8">面試緊張到從容應對</h4>
+                <ul data-aos="fade-up" class="podcast-ul mb-16">
                   <li class="podcast-li mb-8">
                     透過面試模擬找出常犯的邏輯漏洞
                   </li>
@@ -498,23 +520,28 @@
                     討論遇到不熟悉議題時的回應方式
                   </li>
                 </ul>
-                <a class="podcastLink" href="">前往聆聽 podcast</a>
+                <a data-aos="fade-up" class="podcastLink" href=""
+                  >前往聆聽 podcast</a
+                >
               </li>
               <li>
                 <img
+                  data-aos="flip-left"
                   data-filename="people4.png"
                   class="mb-16"
                   src="./images/people4.png"
                   alt=""
                 />
-                <h4 class="mb-8">面試緊張到從容應對</h4>
-                <ul class="podcast-ul mb-16">
+                <h4 data-aos="fade-up" class="mb-8">面試緊張到從容應對</h4>
+                <ul data-aos="fade-up" class="podcast-ul mb-16">
                   <li class="podcast-li mb-8">擬定進階框架或技術研究目標</li>
                   <li class="podcast-li podcast-line">
                     培養跨團隊溝通與簡報能力
                   </li>
                 </ul>
-                <a class="podcastLink" href="">前往聆聽 podcast</a>
+                <a data-aos="fade-up" class="podcastLink" href=""
+                  >前往聆聽 podcast</a
+                >
               </li>
             </ul>
           </div>
@@ -526,34 +553,38 @@
         </div>
         <div class="subForm">
           <div class="subFormWindow">
-            <h2 class="subscribe-title mb-16">訂閱電子報</h2>
-            <p class="subscribe-description mb-24">
+            <h2 data-aos="fade-up" class="subscribe-title mb-16">訂閱電子報</h2>
+            <p data-aos="fade-up" class="subscribe-description mb-24">
               立即訂閱，搶先掌握
               <span class="blue">前端 x 職涯</span>
               的獨家資訊！
             </p>
             <form class="subscribe-form">
               <input
+                data-aos="fade-up"
                 class="subscribe-input mb-8"
                 type="text"
                 placeholder="請輸入您的大名"
                 required
               />
               <input
+                data-aos="fade-up"
                 class="subscribe-input mb-24"
                 type="email"
                 placeholder="請輸入您的電子信箱"
                 required
               />
-              <button type="submit" class="subscribe-button">啟動訂閱</button>
+              <button data-aos="fade-up" type="submit" class="subscribe-button">
+                啟動訂閱
+              </button>
             </form>
           </div>
         </div>
       </section>
       <div id="contact" class="contact">
-        <h2 class="mb-24">與我聯繫</h2>
+        <h2 data-aos="fade-up" class="mb-24">與我聯繫</h2>
         <ul class="contact-ul">
-          <li class="mb-16">
+          <li data-aos="fade-up" class="mb-16">
             <a href="#">
               <p class="contactEmail">alysewang@hexschool.com 合作洽談</p> </a
             ><a href="#"
@@ -563,7 +594,7 @@
                 alt="linkArrow"
             /></a>
           </li>
-          <li class="mb-16">
+          <li data-aos="fade-up" class="mb-16">
             <a href="#">
               <p class="contactText">
                 <img class="contactYt" src="./images/onlyIcon.png" />Youtube
@@ -576,7 +607,7 @@
                 alt="linkArrow"
             /></a>
           </li>
-          <li class="mb-16">
+          <li data-aos="fade-up" class="mb-16">
             <a href="#">
               <p class="contactText">
                 <img
@@ -591,7 +622,7 @@
                 alt="linkArrow"
             /></a>
           </li>
-          <li class="mb-16">
+          <li data-aos="fade-up" class="mb-16">
             <a href="#">
               <p class="contactText">
                 <img class="contactFb" src="./images/onlyIcon-2.png" />Facebook
@@ -604,7 +635,7 @@
                 alt="linkArrow"
             /></a>
           </li>
-          <li class="mb-16">
+          <li data-aos="fade-up" class="mb-16">
             <a href="#">
               <p class="contactText">
                 <img
@@ -619,7 +650,7 @@
                 alt="linkArrow"
             /></a>
           </li>
-          <li>
+          <li data-aos="fade-up">
             <a href="#">
               <p class="contactText">
                 <img class="contactIg" src="./images/onlyIcon-3.png" />Instagram
@@ -708,6 +739,10 @@
 
       // resize 時觸發
       window.addEventListener("resize", handleResize);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

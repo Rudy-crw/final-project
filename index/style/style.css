@@ -433,7 +433,15 @@ h4 {
   justify-content: space-around;
   max-width: 236px;
 }
-
+.linkLogo a {
+  transition: transform 0.1s ease-in;
+  display: inline-block;
+  border-radius: 20px;
+}
+.linkLogo a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* ===  services === */
 .services-ul {
   max-width: 1076px;
@@ -779,7 +787,7 @@ h4 {
     font-size: 52px;
     font-weight: 900;
     margin: 0 auto;
-    padding-top: 24px;
+    /* margin-top: 24px; */
     text-align: center;
   }
   .welcomImg .welcomTitle h3 {
@@ -796,6 +804,7 @@ h4 {
     font-size: 24px;
     font-weight: 500;
   }
+
   /* === service === */
   .services {
     padding-top: 64px;
