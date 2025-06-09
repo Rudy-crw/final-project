@@ -779,7 +779,7 @@ h4 {
     font-size: 52px;
     font-weight: 900;
     margin: 0 auto;
-    /* margin-top: 24px; */
+    padding-top: 24px;
     text-align: center;
   }
   .welcomImg .welcomTitle h3 {
