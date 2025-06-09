@@ -634,7 +634,7 @@ h4 {
 }
 .subForm {
   width: 50%;
-  background-image: url("/index/images/Hero\ Section2.png");
+  background-image: url("/index/images/Hero%20Section2.png");
   display: flex;
   justify-content: center;
   align-items: center;
