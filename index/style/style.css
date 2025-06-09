@@ -240,12 +240,16 @@ h4 {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  height: calc(90vh - 90px);
+  max-height: calc(90vh - 90px);
   min-height: 300px;
+  z-index: 0;
 }
 .welcomImg .bigImg {
-  width: 50%;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcomImg .bigImg img {
   width: 100%;
@@ -254,7 +258,7 @@ h4 {
 }
 .welcomImg .welcomTitle {
   width: 50%;
-  background-image: url("/index/images/Hero\ Section2.png");
+  background-image: url("/index/images/Hero%20Section2.png");
   background-size: contain;
   background-repeat: repeat;
   display: flex;
@@ -270,14 +274,7 @@ h4 {
 .header {
   max-width: 100%;
 }
-.welcomImg {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  max-height: calc(90vh - 90px);
-  min-height: 300px;
-  z-index: 0;
-}
+
 .main {
   max-width: 1296px;
   margin: 0 auto;
@@ -491,10 +488,10 @@ h4 {
   justify-content: center;
   align-items: center;
   margin-left: 8px;
-  &:hover {
-    transition: transform 0.3s ease;
-    transform: scale(1.5);
-  }
+}
+.contactAnchor a:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
 }
 
 /* ===  case-sucess === */
@@ -574,10 +571,10 @@ h4 {
   border-radius: 40px;
   text-decoration: none;
   padding: 8px 16px;
-  &:hover {
-    color: #fff;
-    background: #0027d5;
-  }
+}
+.caseCardBtn .btn:hover {
+  color: #fff;
+  background: #0027d5;
 }
 .sucess-down {
   background: #f5f5f5;
@@ -671,11 +668,11 @@ h4 {
   color: #0027d5;
   background-color: #fff;
   font-size: 16px;
-  &:hover {
-    color: #fff;
-    background-color: #0027d5;
-    cursor: pointer;
-  }
+}
+.subscribe-button:hover {
+  color: #fff;
+  background-color: #0027d5;
+  cursor: pointer;
 }
 .contact {
   max-width: 1296px;
@@ -717,31 +714,53 @@ h4 {
   transform: scale(1.2);
 }
 /* ======= Responsive（響應式）======= */
-/* @media (max-width: 1044px) {
+@media (max-width: 1400px) {
   .intro {
-    margin: 0;
-    padding: 40px 30px;
-    background: #ededed;
-    z-index: 1;
+    margin: 0 auto;
+    position: static;
   }
-  .caseCardText {
-    margin-left: -55px;
-    margin-top: 29px;
-    z-index: 1;
-    background: #fff;
+}
+@media (max-width: 1200px) {
+  .sucess-down {
+    max-width: 95%;
+    margin: 0 auto;
   }
-  .caseCardBtn {
-    margin-top: -40px;
-    position: relative;
-    z-index: 2;
+  .podcastList {
+    /* display: block; */
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+  .podcastLink {
+    margin-bottom: 24px;
+    font-weight: 500;
   }
 }
 @media (max-width: 900px) {
   .container {
     padding: 0;
   }
-} */
-@media (max-width: 576px) {
+}
+@media (max-width: 800px) {
+  .welcomImg {
+    display: block;
+    max-height: calc(90vh - 90px);
+  }
+  .welcomImg .bigImg {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: calc(90vh - 90px - 250px);
+    overflow: hidden;
+  }
+
+  .welcomImg .welcomTitle {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 776px) {
   .container {
     padding: 0;
   }
@@ -749,10 +768,13 @@ h4 {
     flex-direction: column;
   }
   .welcomImg .bigImg {
-    width: 100%;
+    max-width: 100%;
+  }
+  .welcomImg .bigImg img {
+    margin: 0 auto;
   }
   .welcomImg .welcomTitle {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     justify-content: flex-start;
   }
@@ -769,7 +791,7 @@ h4 {
   .intro {
     width: 90%;
     margin: 0;
-    margin-top: -180px;
+    margin-top: -10vh;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 24px;
