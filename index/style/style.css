@@ -259,7 +259,7 @@ h4 {
 .welcomImg .welcomTitle {
   width: 50%;
   background-image: url("/index/images/Hero%20Section2.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
@@ -336,6 +336,7 @@ h4 {
 .swiper-button-prev i {
   color: #fff;
   font-size: 28px;
+  line-height: 1;
 }
 .cardList {
   max-width: 1296px;
@@ -737,20 +738,15 @@ h4 {
     font-weight: 500;
   }
 }
-@media (max-width: 900px) {
-  .container {
-    padding: 0;
-  }
-}
 @media (max-width: 800px) {
   .welcomImg {
     display: block;
-    max-height: calc(90vh - 90px);
+    min-height: calc(90vh - 90px);
   }
   .welcomImg .bigImg {
     margin: 0 auto;
     max-width: 100%;
-    max-height: calc(90vh - 90px - 250px);
+    min-height: calc(90vh - 90px - 250px);
     overflow: hidden;
   }
 
@@ -760,40 +756,40 @@ h4 {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 800px) {
   .container {
     padding: 0;
   }
   .welcomImg {
-    flex-direction: column;
+    min-height: 731px;
   }
   .welcomImg .bigImg {
-    max-width: 100%;
+    max-height: 100%;
+    display: block;
   }
   .welcomImg .bigImg img {
     margin: 0 auto;
   }
   .welcomImg .welcomTitle {
-    max-width: 100%;
-    height: 100%;
-    justify-content: flex-start;
+    max-height: 100%;
+    min-height: 356px;
+    display: block;
   }
   .welcomImg .welcomTitle h1 {
     font-size: 52px;
     font-weight: 900;
     margin: 0 auto;
-    margin-top: 24px;
+    /* margin-top: 24px; */
+    text-align: center;
   }
   .welcomImg .welcomTitle h3 {
     margin: 0 auto;
+    text-align: center;
   }
   /* === intro === */
   .intro {
     width: 90%;
-    margin: 0;
-    margin-top: -10vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 40px 24px;
   }
   .intro h3 {
@@ -1014,5 +1010,10 @@ h4 {
   }
   .footer {
     border-top: 2px solid #6c757d;
+  }
+}
+@media (max-width: 600px) {
+  .intro {
+    margin-top: -160px;
   }
 }
