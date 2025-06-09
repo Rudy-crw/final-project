@@ -60,7 +60,9 @@
         </div>
       </div>
       <div class="intro">
-        <h3 class="mb-16">嗨，我是 Alyse <br />一名深耕前端技術的工程師。</h3>
+        <h3 class="mb-16 changeTitle">
+          嗨，我是 Alyse <br />一名深耕前端技術的工程師。
+        </h3>
         <h3 class="mb-16">
           擅長 React、Vue
           等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
@@ -690,7 +692,14 @@
             emailP.textContent = `${emailText} ${extraText}`;
           }
         }
-
+        const changeTitle = document.querySelector("h3.changeTitle");
+        const first = "嗨，我是 Alyse";
+        const second = "一名深耕前端技術的工程師。";
+        if (isMobile) {
+          changeTitle.innerHTML = `${first}<br />${second}`;
+        } else {
+          changeTitle.innerHTML = `${first}${second}`;
+        }
         console.log("=== 更新結束 ===");
       }
 
