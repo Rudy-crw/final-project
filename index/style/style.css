@@ -258,7 +258,7 @@ h4 {
 }
 .welcomImg .welcomTitle {
   width: 50%;
-  background-image: url("/index/images/HeroSection2.png");
+  background-image: url("../images/HeroSection2.png");
   background-size: cover;
   background-repeat: repeat;
   display: flex;
@@ -634,7 +634,7 @@ h4 {
 }
 .subForm {
   width: 50%;
-  background-image: url("/index/images/HeroSection2.png");
+  background-image: url("../images/HeroSection2.png");
   display: flex;
   justify-content: center;
   align-items: center;
