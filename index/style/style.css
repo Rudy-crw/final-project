@@ -348,7 +348,7 @@ h4 {
   margin-bottom: 16px;
 }
 .card .date {
-  font-size: 16px;
+  /* font-size: 16px; */
   display: block;
 }
 .card .tag {
@@ -595,7 +595,7 @@ h4 {
   justify-content: space-evenly;
   gap: 24px;
   padding: 24px;
-  height: 316px;
+  /* height: 316px; */
 }
 .podcastList h4 {
   font-weight: 700;
